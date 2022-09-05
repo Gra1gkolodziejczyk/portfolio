@@ -8,7 +8,6 @@ import Node from '../../assets/images/node.png';
 import Flutter from '../../assets/images/flutter.png';
 import Tailwind from '../../assets/images/tailwind.png';
 
-
 const Skills = () => {
   return (
     <div name='skills' className='w-full h-screen bg-[#4357AD] text-[#CCD6F6]'>

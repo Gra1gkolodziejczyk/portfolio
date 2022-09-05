@@ -13,6 +13,7 @@ function Navbar() {
 
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#4357AD] text-[#CCD6F6]">
+            {/* Navbar */}
             <div>
                 <Link to="home"  smooth={true} duration={500}>
                     <img className="cursor-pointer w-14 animate-spin duration-500" src={Logo} alt="logo"/>

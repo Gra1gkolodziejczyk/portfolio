@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div name='contact' className='w-full h-screen bg-[#4357AD] text-[#CCD6F6] flex justify-center items-center p-4'>
+    <div name="contact" className='w-full h-screen bg-[#4357AD] text-[#CCD6F6] flex justify-center items-center p-4'>
         <form method='POST' action="https://getform.io/f/c4f2fffe-f68b-4af4-9fb8-a3be00f8abda" className='flex flex-col max-w-[600px] w-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-b-[#61DBFB]'>Contactez-moi</p>
@@ -14,7 +14,7 @@ const Contact = () => {
             <button className='text-white border-2 hover:bg-[#61DBFB] hover:border-[#61DBFB] hover:text-black px-4 py-3 my-8 mx-auto flex items-center'>Collaborons ensemble</button>
         </form>
     </div>
-  )
+  );
 }
 
 export default Contact;
