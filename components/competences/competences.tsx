@@ -1,8 +1,12 @@
+import { BubbleSection } from "@/components/competences/bubble-section";
+
 export function Competences() {
   return (
-    <section className="max-w-[1200px] mx-auto flex flex-row h-full">
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-      </div>
+    <section className="min-h-screen relative overflow-hidden">
+      <h2 className="text-4xl font-bold text-center mb-16 text-primary pt-20">
+        Mes Compétences
+      </h2>
+      <BubbleSection />
     </section>
   );
 }
