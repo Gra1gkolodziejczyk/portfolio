@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Me from '@/public/moi.png';
 import ReactImage from '@/public/react.svg';
 import TailwindCss from '@/public/tailwindcss.svg';
-import Flutter from '@/public/flutter.svg';
+import Dart from '@/public/dart.svg';
 import NestJs from '@/public/nestjs.svg';
 import Prisma from '@/public/prisma.svg';
 import PrismaLight from '@/public/prisma_dark.svg';
@@ -61,7 +61,7 @@ export function AccueilSection() {
           className="flex flex-row gap-4 mt-4"
         >
           <p className="font-bold text-lg sm:pt-1">Stack technique :</p>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row items-center justify-center text-center gap-2">
             <motion.div
               initial={{ y: 0 }}
               animate={{ y: [-10, 10, 0] }}
@@ -95,7 +95,7 @@ export function AccueilSection() {
                 ease: "easeInOut"
               }}
             >
-              <Image src={Flutter} alt="image" height={25} width={25} />
+              <Image src={Dart} alt="image" height={30} width={30} />
             </motion.div>
 
             <motion.div

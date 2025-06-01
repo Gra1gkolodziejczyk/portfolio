@@ -29,28 +29,28 @@ export function Header() {
               Accueil
             </Link>
             <Link
-              href="#about"
+              href=""
               className="text-primary font-medium hover:underline hover:underline-offset-4 transition-colors"
             >
               À propos de moi
             </Link>
             <Link
-              href="#projets"
-              className="text-primary font-medium hover:underline hover:underline-offset-4 transition-colors"
-            >
-              Mes projets
-            </Link>
-            <Link
-              href="#competences"
+              href=""
               className="text-primary font-medium hover:underline hover:underline-offset-4 transition-colors"
             >
               Mes compétences
+            </Link>
+            <Link
+              href=""
+              className="text-primary font-medium hover:underline hover:underline-offset-4 transition-colors"
+            >
+              Mes projets
             </Link>
           </nav>
 
           <div className="flex items-center gap-4">
             <Link
-              href="#contact"
+              href=""
               className="hidden md:inline-flex px-6 py-3 text-sm font-medium text-white transition-colors bg-primary rounded-md hover:bg-primary/90"
             >
               Me contacter
@@ -79,25 +79,25 @@ export function Header() {
               Accueil
             </Link>
             <Link
-              href="#about"
+              href=""
               className="text-primary hover:text-primary/80 transition-colors py-2"
             >
               À propos de moi
             </Link>
             <Link
-              href="#projets"
+              className="text-primary hover:text-primary/80 transition-colors py-2"
+              href=""
+            >
+              Mes compétences
+            </Link>
+            <Link
+              href=""
               className="text-primary hover:text-primary/80 transition-colors py-2"
             >
               Mes projets
             </Link>
             <Link
-              href="#competences"
-              className="text-primary hover:text-primary/80 transition-colors py-2"
-            >
-              Mes compétences
-            </Link>
-            <Link
-              href="#contact"
+              href=""
               className="text-primary hover:text-primary/80 transition-colors py-2"
             >
               Me contacter
