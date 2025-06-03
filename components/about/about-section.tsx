@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Intellij from '@/public/intellij.svg';
+import Intellij from '@/public/intellijidea.svg';
 import Valise from '@/public/valise.png';
 import Link from 'next/link';
 import Linkedin from '@/public/linkedin.svg';

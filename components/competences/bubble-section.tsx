@@ -16,7 +16,7 @@ import Nodejs from '@/public/nodejs.svg';
 import Github from '@/public/github.svg';
 import Gitlab from '@/public/gitlab.svg';
 import Homebrew from '@/public/homebrew.svg';
-import Intellij from '@/public/intellij.svg';
+import Intellij from '@/public/intellijidea.svg';
 import Java from '@/public/java.svg';
 import Jest from '@/public/jest.svg';
 import Laravel from '@/public/laravel.svg';
