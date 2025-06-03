@@ -32,159 +32,161 @@ import Zod from '@/public/zod.svg';
 
 const MIN_SIZE = 85;
 const MAX_SIZE = 120;
+const SIZE_STEP = (MAX_SIZE - MIN_SIZE) / 30; // Pour créer une distribution uniforme
 
 const skills: Skill[] = [
   {
     name: 'React',
     icon: ReactImage,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 0,
   },
   {
     name: 'Tailwind',
     icon: TailwindCss,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 1,
   },
   {
     name: 'Dart',
     icon: Dart,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 2,
   },
   {
     name: 'NestJS',
     icon: NestJs,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 3,
   },
   {
     name: 'Prisma',
     icon: Prisma,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 4,
   },
   {
     name: 'Nuxt.js',
     icon: Nuxtjs,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 5,
   },
   {
     name: 'GraphQL',
     icon: Graphql,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 6,
   },
   {
     name: 'Pinia',
     icon: Pinia,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 7,
   },
   {
     name: 'Aws',
     icon: AWS,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 8,
   },
   {
     name: 'Flutter',
     icon: Flutter,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 9,
   },
   {
     name: 'Php',
     icon: Php,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 10,
   },
   {
     name: 'express',
     icon: Express,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 11,
   },
   {
     name: 'Nodejs',
     icon: Nodejs,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 12,
   },
   {
     name: 'Github',
     icon: Github,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 13,
   },
   {
     name: 'Gitlab',
     icon: Gitlab,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 14,
   },
   {
     name: 'Homebrew',
     icon: Homebrew,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 15,
   },
   {
     name: 'IntelliJ',
     icon: Intellij,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 16,
   },
   {
     name: 'Java',
     icon: Java,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 17,
   },
   {
     name: 'Jest',
     icon: Jest,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 18,
   },
   {
     name: 'Laravel',
     icon: Laravel,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 19,
   },
   {
     name: 'Linear',
     icon: Linear,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 20,
   },
   {
     name: 'Motion',
     icon: Motion,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 21,
   },
   {
     name: 'Nextjs',
     icon: Nextjs,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 22,
   },
   {
     name: 'Postgres',
     icon: Postgres,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 23,
   },
   {
     name: 'Rest-Api',
     icon: RestApi,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 24,
   },
   {
     name: 'ShadcnUi',
     icon: ShadcnUi,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 25,
   },
   {
     name: 'Stripe',
     icon: Stripe,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 26,
   },
   {
     name: 'Typescript',
     icon: Typescript,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 27,
   },
   {
     name: 'Zod',
     icon: Zod,
-    size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+    size: MIN_SIZE + SIZE_STEP * 28,
   },
 ];
+
 export function BubbleSection() {
   return (
     <div className='relative min-w-screen min-h-screen'>
-      {skills.map((skill) => (
-        <FloatingBubble key={skill.name} skill={skill} />
+      {skills.map((skill, index) => (
+        <FloatingBubble key={skill.name} skill={skill} index={index} />
       ))}
     </div>
   );
