@@ -16,7 +16,7 @@ import Nodejs from '@/public/nodejs.svg';
 import Github from '@/public/github.svg';
 import Gitlab from '@/public/gitlab.svg';
 import Homebrew from '@/public/homebrew.svg';
-import IntelliJ from '@/public/intellij.svg';
+import Intellij from '@/public/intellij.svg';
 import Java from '@/public/java.svg';
 import Jest from '@/public/jest.svg';
 import Laravel from '@/public/laravel.svg';
@@ -116,7 +116,7 @@ const skills: Skill[] = [
   },
   {
     name: 'IntelliJ',
-    icon: IntelliJ,
+    icon: Intellij,
     size: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
   },
   {

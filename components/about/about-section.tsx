@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import IntelliJ from '@/public/intellij.svg';
+import Intellij from '@/public/intellij.svg';
 import Valise from '@/public/valise.png';
 import Link from 'next/link';
 import Linkedin from '@/public/linkedin.svg';
@@ -28,7 +28,7 @@ export function AboutSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className='flex items-start gap-4'
         >
-          <Image src={IntelliJ} alt='' height={35} width={35} />
+          <Image src={Intellij} alt='' height={35} width={35} />
           <div>
             <h3 className='text-xl font-semibold mb-2 text-black dark:text-white'>
               Passionné de Développement
